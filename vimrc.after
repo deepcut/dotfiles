@@ -1,0 +1,64 @@
+" ================ General Config ====================
+set relativenumber     "Default to relative line number
+
+" Yank/Paste to clipboard
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+" noremap <Leader>Y "+y
+" noremap <Leader>P "+p
+
+" ================ Color Config ====================
+
+" set colors
+set t_Co=256
+let base16colorspace=256
+set termguicolors
+
+let g:yadr_disable_solarized_enhancements = 1
+" colorscheme base16-twilight
+colorscheme base16-default-dark
+" set background=dark
+
+" ================ Key Config ====================
+
+" Clear the search buffer when hitting //
+nnoremap // :nohlsearch<cr>
+
+" Controversial...swap colon and semicolon for easier commands
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
+" Tab mappings.
+nnoremap tt :tabnew<cr>
+nnoremap tn :trbnext<cr>
+nnoremap tp :tabprevious<cr>
+" nnoremap <leader>te :tabedit
+" nnoremap <leader>tc :tabclose<cr>
+" nnoremap <leader>to :tabonly<cr>
+" nnoremap <leader>tp :tabprevious<cr>
+" nnoremap <leader>tf :tabfirst<cr>
+" nnoremap <leader>tl :tablast<cr>
+" nnoremap <leader>tm :tabmove
+
+"""""""""""""""""""""""""""""""""""""
+" multi-purpose tab key (auto-complete)
+" Indent if we're at the beginning of a line. Else, do completion.
+"""""""""""""""""""""""""""""""""""""
+function! InsertTabWrapper()
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-p>"
+  endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+
+" ================ Plugin Config ====================
+
+" CtrlP search by path instead of filename
+let g:ctrlp_by_filename = 0
+
