@@ -3,6 +3,11 @@
 cd ~/.dotfiles
 for file in *; do
   if [[ $file == *"README"* ]]; then continue; fi
+  if [[ $file == *"nvim"* ]]; then
+    echo "'$file' is a directory in ~/.config";
+    rm -rf ~/.config/"$file"
+    ln -sfviF ~/.dotfiles/"$file"/ ~/.config/"$file"
+  fi
 
   if [ -d "${file}" ] ; then
     echo "'$file' is a directory";
