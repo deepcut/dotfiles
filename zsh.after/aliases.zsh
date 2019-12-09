@@ -9,7 +9,7 @@ alias psn='ps aux | grep node'
 
 # Elixir/Phoenix
 alias exiex="iex -S mix"
-alias exserve="iex -S phx.server"
+alias exserve="iex -S mix phx.server"
 
 # Personal convenience
 alias smbe="cd ~/Documents/SM_Local/sm_umbrella/"
