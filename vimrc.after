@@ -59,6 +59,14 @@ inoremap <s-tab> <c-n>
 
 " ================ Plugin Config ====================
 
-" CtrlP search by path instead of filename
+" CtrlP "
+" search by path instead of filename
 let g:ctrlp_by_filename = 0
+
+" NerdTree "
+"Switch between different windows by their direction`
+no <C-j> <C-w>j| "switching to below window
+no <C-k> <C-w>k| "switching to above window
+no <C-l> <C-w>l| "switching to right window
+no <C-h> <C-w>h| "switching to left window
 
