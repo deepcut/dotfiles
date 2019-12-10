@@ -2,7 +2,7 @@ alias rezsh="source ~/.zshrc"
 
 # Dotfiles
 alias dot="cd ~/.dotfiles"
-alias redot="cd ~/.dotfiles; git pull; bash ~/.dotfiles/bin/symlinks_setup.sh; cd ~"
+alias redot="cd ~/.dotfiles; git pull; bash ~/.dotfiles/bin/symlinks_setup.sh; rezsh; cd ~"
 
 # Vim
 alias vi="nvim"
