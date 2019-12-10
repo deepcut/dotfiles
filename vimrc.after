@@ -42,6 +42,13 @@ nnoremap tp :tabprevious<cr>
 " nnoremap <leader>tl :tablast<cr>
 " nnoremap <leader>tm :tabmove
 
+" Split resizing
+nnoremap <Leader>1 :res -5<cr>
+nnoremap <Leader>2 :res +5<cr>
+
+nnoremap <Leader>3 :vertical resize +30<CR>
+nnoremap <Leader>4 :vertical resize -30<CR>
+
 """""""""""""""""""""""""""""""""""""
 " multi-purpose tab key (auto-complete)
 " Indent if we're at the beginning of a line. Else, do completion.
