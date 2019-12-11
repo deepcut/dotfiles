@@ -13,3 +13,8 @@ asdf plugin-update --all
 
 # Tmux
 git clone "https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
+
+# Utility CLIs
+echo "Shopify CLI"
+eval "$(curl -sS https://raw.githubusercontent.com/Shopify/shopify-app-cli/master/install.sh)"
+
