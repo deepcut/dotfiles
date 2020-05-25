@@ -1,9 +1,15 @@
+# Tmux 2.x and 3.x compatible
+bind -n 'C-\' if-shell "$is_vim" "send-keys 'C-\\'" "select-pane -l"
+
 # Pane status styling
 set -g window-status-current-format '#[fg=colour234,bg=colour39]⮀#[fg=colour160,bg=colour39,noreverse,   bold] #{?window_zoomed_flag,#[fg=colour228],} #I #(pwd="#{pane_current_path}"; echo ${pwd####*/}) #W #[fg=colour39,bg=colour234,nobold]⮀'
 
 # Tmux continuum config
 set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
+# for vim & nvim
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-nvim 'session'
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
