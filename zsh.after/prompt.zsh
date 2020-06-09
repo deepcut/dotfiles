@@ -6,4 +6,4 @@
 # Set Starship as default prompt, faster alternative to Spaceship
 eval "$(starship init zsh)"
 
-
+zprof
