@@ -6,6 +6,7 @@ alias redot="cd ~/.dotfiles; git pull; bash ~/.dotfiles/bin/symlinks_setup.sh; r
 
 # Vim
 alias vi="nvim"
+alias vim="nvim"
 
 # Grep processes
 alias pse='ps aux | grep elixir'
