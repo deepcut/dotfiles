@@ -1,0 +1,33 @@
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "➜"     # The "symbol" segment is being set to "➜"
+
+[hg_branch]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[username]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[php]
+disabled = true
+
+[haskell]
+disabled = true
+
+[purescript]
+disabled = true
+
+[memory_usage]
+disabled = false
+show_percentage = true
+show_swap = true
+threshold = 60
+symbol = " "
+separator = "/"
+style = "bold dimmed green"
