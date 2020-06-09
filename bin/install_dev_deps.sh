@@ -2,7 +2,7 @@
 
 # Brew
 brew update && brew upgrade
-brew install tmux neovim asdf
+brew install tmux neovim asdf antigen
 
 # ASDF
 asdf plugin-add ruby
