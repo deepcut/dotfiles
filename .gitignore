@@ -1,4 +1,4 @@
 tmux/plugins/
 config/gh/config.yml
 config/configstore/update-notifier-npm.json
-
+**.zwc
