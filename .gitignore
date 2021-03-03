@@ -6,3 +6,4 @@ config/configstore/nodemon.json
 config/configstore/update-notifier-nodemon.json
 config/gh/hosts.yml
 config/gh/state.yml
+config/yarn/global/node_modules/*
