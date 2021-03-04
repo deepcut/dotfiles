@@ -8,3 +8,4 @@ config/gh/hosts.yml
 config/gh/state.yml
 config/yarn/global/node_modules/*
 config/iterm2/AppSupport
+config/base16-shell
