@@ -8,3 +8,4 @@ asdf install
 
 echo "Updating brew..."
 brew update && brew upgrade
+brew doctor
