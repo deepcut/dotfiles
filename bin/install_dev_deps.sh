@@ -13,7 +13,10 @@ brew install \
   asdf \
   antigen \
   sublime-text \
-  gh
+  gh \
+  exa \
+  ranger \
+  fzf \
 
 # Install editor deps -- Emacs & Fonts
 brew install emacs-plus --HEAD --with-modern-black-dragon-icon --with-no-titlebar

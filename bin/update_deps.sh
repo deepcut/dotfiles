@@ -9,3 +9,6 @@ asdf install
 echo "Updating brew..."
 brew update && brew upgrade
 brew doctor
+
+echo "Updating git submodules..."
+git submodules update
