@@ -29,6 +29,7 @@ brew tap gigalixir/brew && brew install gigalixir
 brew tap fishtown-analytics/dbt && brew install dbt
 brew tap shopify/shopify
 brew install shopify-cli
+brew tap heroku/brew && brew install heroku
 
 # ASDF
 asdf plugin-add ruby

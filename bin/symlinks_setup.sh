@@ -11,7 +11,7 @@ symlink_file() { ln -sfviF ~/.dotfiles/"$1" $2; }
 cd ~/.dotfiles
 for file in *; do
   if   [[ $file == *"README"* ]]; then continue;
-  elif [ -d "${file}" ] ; then
+  elif [ -d "${file}" ]; then
     echo_info "'$file' is a directory. Removing then symlinking...";
     symlink_replace_dir $file ~/."$file"
   elif [ -f "${file}" ]; then

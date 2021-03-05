@@ -1,4 +1,9 @@
-alias rezsh="source ~/.zshrc"
+# Config Loading
+alias zshconfig="vi ~/.zshrc"
+alias lss='exa --long --header --git' # or 'ls -lAFh'
+alias rezsh='source ~/.zshrc'
+alias retmux='tmux source ~/.tmux.conf'
+
 
 # Dotfiles
 alias dot="cd ~/.dotfiles"
@@ -19,7 +24,3 @@ alias ydev="clear; yarn dev"
 alias exiex="source .env; iex -S mix"
 alias exserve="source .env; iex -S mix phx.server"
 alias exnuke="mix ecto.drop; mix ecto.create; mix ecto.migrate"
-
-# Personal convenience
-alias smbe="cd ~/Documents/SM_Local/sm_umbrella/"
-alias smfe="cd ~/Documents/SM_Local/sm_shopify_app/"

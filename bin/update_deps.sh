@@ -11,4 +11,8 @@ brew update && brew upgrade
 brew doctor
 
 echo "Updating git submodules..."
+cd dot
 git submodules update
+
+echo "Updating prezto..."
+zprezto-update
