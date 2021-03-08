@@ -21,8 +21,11 @@ autoload -U colors && colors
 
 # Basic auto/tab complete:
 
-autoload -Uz compinit && compinit -i
-autoload -Uz bashcompinit && bashcompinit -i
+# autoload -Uz compinit && compinit -i
+# autoload -Uz bashcompinit && bashcompinit -i
+
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 
 zstyle ':completion:*' menu yes select
 zmodload zsh/complist
