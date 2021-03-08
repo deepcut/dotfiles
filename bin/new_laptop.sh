@@ -55,6 +55,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Utilities
 brew install --cask iterm2
 brew install --cask firefox
+brew install --cask visual-studio-code
+brew install --cask sublime-text
+brew install --cask dash
 
 cd ~/.dotfiles/bin/
 source ./install_dev_deps.sh
