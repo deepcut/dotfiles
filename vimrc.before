@@ -37,7 +37,6 @@ Plug 'tpope/vim-git'
 
 " Language
 Plug 'sheerun/vim-polyglot'
-Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'vim-syntastic/syntastic'
