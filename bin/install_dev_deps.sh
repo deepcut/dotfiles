@@ -8,7 +8,7 @@ xcode-select --install
 brew update && brew upgrade
 brew install coreutils gcc automake autoconf openssl libyaml readline libxslt libtool unixodbc unzip curl git fd ngrok
 brew install tmux neovim macvim asdf antigen gh
-brew install exa ranger fzf neofetch
+brew install exa ranger fzf neofetch bash-completion
 
 # Install editor deps -- Emacs & Fonts
 brew install emacs-plus --HEAD --with-modern-black-dragon-icon --with-no-titlebar
