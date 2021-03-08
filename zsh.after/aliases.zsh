@@ -29,3 +29,6 @@ alias exnuke="mix ecto.drop; mix ecto.create; mix ecto.migrate"
 # Unalias from plugins
 # Prezto git
 unalias gm gpt
+
+# Alias helper
+alias alias-git='bat ~/.dotfiles/docs/alias-git.md'
