@@ -56,6 +56,9 @@ if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
   set undofile
 endif
 
+" Autosave session
+:let g:session_autosave = 'yes'
+
 " ================ Indentation ======================
 
 set autoindent
@@ -116,3 +119,10 @@ set smartcase       " ...unless we type a capital
 " ================ Security ==========================
 set modelines=0
 set nomodeline
+
+" ================ Custom Settings ========================
+so ~/.vim/settings.vim
+
+if filereadable(expand("~/.vimrc.after"))
+  source ~/.vimrc.after
+endif

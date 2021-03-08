@@ -1,0 +1,114 @@
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+if empty(glob('~/.vim/plugged'))
+  autocmd VimEnter * PlugInstall
+endif
+call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.config/nvim/plugged')
+
+" Theme
+Plug 'chriskempson/base16-vim'
+
+" Make sure you use single quotes
+Plug 'tpope/vim-sensible'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-github-dashboard'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fireplace'
+Plug 'junegunn/fzf'
+
+Plug 'chrisbra/color_highlight'
+Plug 'skwp/vim-colors-solarized'
+Plug 'itchyny/lightline.vim'
+Plug 'jby/tmux.vim'
+Plug 'morhetz/gruvbox'
+Plug 'xsunsmile/showmarks'
+Plug 'chriskempson/base16-vim'
+" Required for Gblame in terminal vim
+Plug 'godlygeek/csapprox'
+
+" Git
+Plug 'gregsexton/gitv'
+Plug 'mattn/gist-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+
+" Language
+Plug 'sheerun/vim-polyglot'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'vim-syntastic/syntastic'
+Plug 'nelstrom/vim-markdown-preview'
+Plug 'skwp/vim-html-escape'
+Plug 'mxw/vim-jsx'
+Plug 'jparise/vim-graphql'
+
+" Project
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'preservim/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'JazzCore/ctrlp-cmatcher'
+Plug 'junegunn/fzf'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+
+" Search
+Plug 'justinmk/vim-sneak'
+Plug 'rking/ag.vim'
+Plug 'henrik/vim-indexed-search'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'Lokaltog/vim-easymotion'
+
+" TextObject
+Plug 'austintaylor/vim-indentobject'
+Plug 'bootleq/vim-textobj-rubysymbol'
+Plug 'coderifous/textobj-word-column.vim'
+Plug 'kana/vim-textobj-datetime'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-function'
+Plug 'kana/vim-textobj-user'
+Plug 'lucapette/vim-textobj-underscore'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'thinca/vim-textobj-function-javascript'
+Plug 'wellle/targets.vim'
+
+" General Improvements
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'Shougo/neocomplete'
+Plug 'briandoll/change-inside-surroundings.vim'
+Plug 'godlygeek/tabular'
+Plug 'tomtom/tcomment_vim'
+Plug 'vim-scripts/camelcasemotion'
+Plug 'vim-scripts/matchit.zip'
+Plug 'kristijanhusak/vim-multiple-cursors'
+Plug 'Keithbsmiley/investigate.vim'
+Plug 'chrisbra/NrrwRgn'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'bogado/file-line'
+Plug 'mattn/webapi-vim'
+Plug 'sjl/gundo.vim'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'vim-scripts/AutoTag'
+Plug 'vim-scripts/lastpos.vim'
+Plug 'vim-scripts/sudo.vim'
+Plug 'goldfeld/ctrlr.vim'
+Plug 'editorconfig/editorconfig-vim'
+
+" Initialize plugin system
+call plug#end()
+
+" Call PlugInstall to install
