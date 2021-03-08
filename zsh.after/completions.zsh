@@ -1,1 +1,1 @@
-source ~/.dbt-completion.bash
+source ~/.completions/dbt/dbt-completion.bash

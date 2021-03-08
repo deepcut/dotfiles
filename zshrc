@@ -20,15 +20,14 @@ CASE_SENSITIVE="false"
 autoload -U colors && colors
 
 # Basic auto/tab complete:
-# setopt MENU_COMPLETE
-# setopt no_list_ambiguous
 
 autoload -Uz compinit
+autoload -Uz bashcompinit
 
 zstyle ':completion:*' menu yes select
 zmodload zsh/complist
 compinit -i
-# bashcompinit
+bashcompinit
 _comp_options+=(globdots)  # Include hidden files.
 
 # Use vim keys in tab complete menu:
