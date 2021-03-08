@@ -10,7 +10,7 @@ symlink_file() { ln -sfvF ~/.dotfiles/"$1" $2; }
 
 cd ~/.dotfiles
 for file in *; do
-  if   [[ $file == *"README"* ]]; then continue;
+  if   [ $file == *"README"* ] || [ $file == *"docs"* ]; then continue;
   elif [ -d "${file}" ]; then
     echo_info "'$file' is a directory. Removing then symlinking...";
     symlink_replace_dir $file ~/."$file"

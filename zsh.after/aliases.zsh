@@ -25,3 +25,7 @@ alias ydev="clear; yarn dev"
 alias exiex="source .env; iex -S mix"
 alias exserve="source .env; iex -S mix phx.server"
 alias exnuke="mix ecto.drop; mix ecto.create; mix ecto.migrate"
+
+# Unalias from plugins
+# Prezto git
+unalias gp gm gpt gs

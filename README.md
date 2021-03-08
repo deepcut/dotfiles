@@ -1,14 +1,16 @@
 ## Fresh Install
 
-- `sh ./bin/new_laptop.sh`
+Clone the Repo
+- `git clone git@github.com:fadhguru/dotfiles.git ~/.dotfiles`
 
-## Dotfiles Setup
+Bootstrap Script
+- `sh ./dotfiles/bin/new_laptop.sh`
 
-- 
-- Run command to symlink customizations `bash bin/symlinks_setup.sh`
-- [Install Spaceship Zsh Theme](https://github.com/denysdovhan/spaceship-prompt) - `npm install -g spaceship-prompt`
+## Updating
 
-## Tmux
+Re setup all symlinks
+- `resymlink`
 
-- [Install Tmux Package Manager](https://github.com/tmux-plugins/tpm)
+## Alias Docs
 
+See `docs/aliases-git.md`
