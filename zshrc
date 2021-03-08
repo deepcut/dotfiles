@@ -21,13 +21,11 @@ autoload -U colors && colors
 
 # Basic auto/tab complete:
 
-autoload -Uz compinit
-autoload -Uz bashcompinit
+autoload -Uz compinit && compinit -i
+autoload -Uz bashcompinit && bashcompinit -i
 
 zstyle ':completion:*' menu yes select
 zmodload zsh/complist
-compinit -i
-bashcompinit
 _comp_options+=(globdots)  # Include hidden files.
 
 # Use vim keys in tab complete menu:
