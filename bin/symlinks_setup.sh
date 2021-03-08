@@ -4,9 +4,9 @@ echo_info() { tput setaf 2 && echo $1; tput sgr0; }
 echo_warn() { tput setaf 1 && echo $1; tput sgr0; }
 symlink_replace_dir() {
   rm -rf $2
-  ln -sfviF ~/.dotfiles/"$1"/ $2
+  ln -sfvF ~/.dotfiles/"$1"/ $2
 }
-symlink_file() { ln -sfviF ~/.dotfiles/"$1" $2; }
+symlink_file() { ln -sfvF ~/.dotfiles/"$1" $2; }
 
 cd ~/.dotfiles
 for file in *; do
