@@ -24,8 +24,8 @@ autoload -U colors && colors
 # autoload -Uz compinit && compinit -i
 # autoload -Uz bashcompinit && bashcompinit -i
 
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit -i
+autoload -U +X bashcompinit && bashcompinit -i
 
 zstyle ':completion:*' menu yes select
 zmodload zsh/complist
