@@ -1,7 +1,7 @@
 # Config Loading
 alias zshconfig="vi ~/.zshrc"
 alias lss='exa --long --header --git' # or 'ls -lAFh'
-alias rezsh='source ~/.zshrc'
+alias rezsh='exec zsh'
 alias retmux='tmux source ~/.tmux.conf'
 alias resymlink='sh ~/.bin/symlinks_setup.sh'
 alias updateall='sh ~/.bin/updatedeps.sh'
