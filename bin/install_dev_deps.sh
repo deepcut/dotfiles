@@ -18,7 +18,7 @@ asdf install
 
 # Brew
 brew update && brew upgrade
-brew install coreutils gcc automake autoconf openssl libyaml readline libxslt libtool unixodbc unzip curl git fd ngrok
+brew install coreutils gcc automake autoconf openssl libyaml readline libxslt libtool unixodbc unzip curl git fd ngrok ripgrep ag
 brew install tmux neovim macvim asdf antigen gh
 brew install exa ranger fzf neofetch bash-completion
 
