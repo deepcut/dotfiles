@@ -12,7 +12,7 @@ brew doctor
 
 echo "Updating git submodules..."
 cd dot
-git submodules update
+git submodule update --recursive --remote
 
 echo "Updating prezto..."
 zprezto-update

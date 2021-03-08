@@ -21,6 +21,10 @@ chsh -s $(which zsh) # default to zsh
 echo_info "Cloning dotfiles repo..."
 git clone git@github.com:fadhguru/dotfiles.git ~/.dotfiles
 
+# Install submodules
+cd ~/.dotfiles
+git submodule update --init --recursive
+
 # Prezto
 if [ -d "$HOME/.zprezto" ] #&& [ -d "~/.dotfiles" ]
 then
