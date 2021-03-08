@@ -1,7 +1,3 @@
-# Load Antigen
-source /opt/homebrew/share/antigen/antigen.zsh
-antigen use oh-my-zsh
-
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
