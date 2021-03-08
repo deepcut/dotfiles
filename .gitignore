@@ -10,3 +10,7 @@ config/gh/state.yml
 config/yarn/global/node_modules/*
 config/iterm2/AppSupport
 config/base16-shell
+.DS_Store
+config/nvim/plugged/*
+vim/plugged/*
+vim/.netrwhist
