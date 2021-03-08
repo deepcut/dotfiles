@@ -11,15 +11,19 @@ DISABLE_UPDATE_PROMPT="true"
 # Command auto-correction.
 ENABLE_CORRECTION="true"
 
+# Autocomplete case sensitivity
+CASE_SENSITIVE="false"
+
 ## User config
 
 # Enable colors
 autoload -U colors && colors
 
 # Basic auto/tab complete:
-autoload -U compinit
-# autoload -U +X compinit
-# autoload -U +X bashcompinit
+# setopt MENU_COMPLETE
+# setopt no_list_ambiguous
+
+autoload -Uz compinit
 
 zstyle ':completion:*' menu yes select
 zmodload zsh/complist
@@ -27,9 +31,17 @@ compinit -i
 # bashcompinit
 _comp_options+=(globdots)  # Include hidden files.
 
-source ~/.dbt-completion.bash
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# Initialize prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
+# Load after config
 if [ -d $HOME/.zsh.after/ ]; then
   if [ "$(ls -A $HOME/.zsh.after/)" ]; then
     for config_file ($HOME/.zsh.after/*.zsh) source $config_file
