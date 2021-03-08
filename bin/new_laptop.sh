@@ -44,6 +44,14 @@ fi
 ## Tmux - TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# Vim - VimPlugs
+# regular vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# nvim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # Utilities
 brew install --cask iterm2
 brew install --cask firefox
@@ -51,3 +59,4 @@ brew install --cask firefox
 cd ~/.dotfiles/bin/
 source ./install_dev_deps.sh
 source ./update_deps.sh
+source ./symlinks_setup.sh

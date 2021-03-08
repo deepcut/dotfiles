@@ -17,6 +17,7 @@ brew install \
   exa \
   ranger \
   fzf \
+  neofetch \
 
 # Install editor deps -- Emacs & Fonts
 brew install emacs-plus --HEAD --with-modern-black-dragon-icon --with-no-titlebar
@@ -39,10 +40,3 @@ asdf plugin-add erlang
 asdf plugin-add nodejs
 asdf plugin-add java
 asdf plugin-update --all
-
-# Tmux
-# git clone "https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
-
-# Vim Utilities -- TO BE REMOVED
-# yadr-vim-add-plugin --url=https://github.com/pangloss/vim-javascript
-# yadr-vim-add-plugin --url=https://github.com/MaxMEllon/vim-jsx-pretty
