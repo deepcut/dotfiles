@@ -2,13 +2,34 @@
 
 [prezto source](https://github.com/sorin-ionescu/prezto/tree/master/modules/git)
 
-Git
-===
+Quick Ref
+---------
+STATUS
+  - `gws` - `git status` in the short format.
+  - `gwS` - `git status` working-tree status.
 
-Enhances the [Git][1] distributed version control system by providing aliases,
-functions and by exposing repository status information to prompts.
+DIFF
+  - `gwd` - `git diff -no-ext-diff`
+  - `gid` - `gid diff --no-ext-diff --cached`
 
-Git **1.7.2** is the [minimum required version][7].
+ADD/COMMIT
+  - `gia` - `git add`
+  - `gc` - `git commit --verbose`
+  - `gca` - `git commit --verbose --all`
+  - `gcf` - `git commit --amend --reuse-message HEAD`
+
+RESET
+  - `gwR` - `git reset --hard`
+  - `gir` - `git reset`
+
+PUSH
+  - `gp` - `git push`
+  - `gpF` - `git push --force`
+
+PULL/FETCH/CLONE
+  - `gfm` - `git pull`
+  - `gf` - `git fetch`
+  - `gfc` - `git clone`
 
 Settings
 --------
