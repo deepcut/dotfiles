@@ -1,7 +1,7 @@
 elixir 1.11.1-otp-22
 java azul-zulu-13.27.9
 nodejs 14.14.0
-ruby 2.7.1
+ruby 3.0.0
 erlang 22.2.8
 
 python 3.9.1
