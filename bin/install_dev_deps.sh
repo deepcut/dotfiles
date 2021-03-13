@@ -22,12 +22,6 @@ brew install coreutils gcc automake autoconf openssl libyaml readline libxslt li
 brew install tmux neovim macvim asdf antigen gh
 brew install exa ranger fzf neofetch bash-completion
 
-# Install editor deps -- Emacs & Fonts
-brew install emacs-plus --HEAD --with-modern-black-dragon-icon --with-no-titlebar
-brew tap homebrew/cask-fonts 
-brew install --cask font-source-code-pro
-brew install --cask font-hack-nerd-font
-
 # Install work deps
 brew tap gigalixir/brew && brew install gigalixir
 brew tap fishtown-analytics/dbt && brew install dbt

@@ -63,6 +63,15 @@ brew install --cask visual-studio-code
 brew install --cask sublime-text
 brew install --cask dash
 
+# Install editor deps -- Emacs & Fonts
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --HEAD --with-modern-black-dragon-icon --with-no-titlebar
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+brew tap homebrew/cask-fonts 
+brew install --cask font-source-code-pro
+brew install --cask font-hack-nerd-font
+
 cd ~/.dotfiles/bin/
 source ./install_dev_deps.sh
 source ./update_deps.sh
