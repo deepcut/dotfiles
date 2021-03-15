@@ -14,3 +14,4 @@ config/base16-shell
 config/nvim/plugged/*
 vim/plugged/*
 vim/.netrwhist
+config/gcloud
