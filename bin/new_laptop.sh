@@ -62,6 +62,8 @@ brew install --cask firefox
 brew install --cask visual-studio-code
 brew install --cask sublime-text
 brew install --cask dash
+brew install --cask clipy
+brew install --cask postico
 
 # Install editor deps -- Emacs & Fonts
 brew tap d12frosted/emacs-plus
