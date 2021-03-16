@@ -27,4 +27,5 @@ brew tap gigalixir/brew && brew install gigalixir
 brew tap fishtown-analytics/dbt && brew install dbt
 brew tap shopify/shopify
 brew install shopify-cli
+brew install themekit
 brew tap heroku/brew && brew install heroku
