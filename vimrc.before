@@ -7,6 +7,9 @@ endif
 call plug#begin('~/.vim/plugged')
 " call plug#begin('~/.config/nvim/plugged')
 
+" Coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Theme
 Plug 'chriskempson/base16-vim'
 
@@ -44,6 +47,9 @@ Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
 Plug 'mxw/vim-jsx'
 Plug 'jparise/vim-graphql'
+Plug 'elixir-editors/vim-elixir'
+" Plug 'dense-analysis/ale'
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
 " Project
 Plug 'jistr/vim-nerdtree-tabs'
