@@ -16,3 +16,4 @@ vim/plugged/*
 vim/.netrwhist
 config/gcloud
 config/coc/extensions/node_modules
+lsp/elixir-ls/
