@@ -14,3 +14,8 @@ Re setup all symlinks
 ## Alias Docs
 
 See `docs/aliases-git.md`
+
+## Troubleshooting
+
+If `gpg` command fails with `dirmngr` errors while installing `nodejs` via `asdf`, run the following:
+- `sudo pkill dirmngr; dirmngr --debug-all --daemon --standard-resolver`
