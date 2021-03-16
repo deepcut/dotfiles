@@ -4,3 +4,6 @@
 [submodule "completions/dbt"]
 	path = completions/dbt
 	url = git@github.com:fishtown-analytics/dbt-completion.bash.git
+[submodule "lsp/elixir-ls"]
+	path = lsp/elixir-ls
+	url = git@github.com:elixir-lsp/elixir-ls.git
