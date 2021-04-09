@@ -75,6 +75,7 @@
 [core]
   autocrlf = false
   editor = nvim
+	excludesfile = /Users/ffw/.gitignore_global
 [advice]
   statusHints = false
 [diff]
